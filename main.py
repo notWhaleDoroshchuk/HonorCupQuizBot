@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-TOKEN =  'https://quiz.honorcup.ru/app/?id=57684&sign=3112e1502ca3ade40a8519c05df7c06d'
+path = 'C:\Temp\Token.txt'
+with open(path, "r") as f:
+    TOKEN = f.readline()
 from selenium import webdriver
 import time
 browser = webdriver.Firefox(executable_path='geckodriver.exe')
